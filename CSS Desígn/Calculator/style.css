@@ -1,0 +1,113 @@
+@import url(https://allfont.net/allfont.css?fonts=digital-7-mono);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins,arial;
+}
+
+body{
+
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #12ff56;
+
+}
+
+.content{
+
+    background-color: #222;
+    width: 270px;
+    height: 410px;
+    padding: 10px;
+    border: 5px solid #eee;
+    border-radius: 10px;
+
+}
+
+.content .screen{
+
+    display: inline-block;
+    width: 100%;
+    height: 15%;
+    text-align: end;
+    vertical-align: middle;
+    background-color: #124212;
+    font-size: 3.1em;
+    margin-bottom: 20px;
+    padding-right: 7.5px;
+    padding-bottom: 7.5px;
+    font-family: digital-7 mono, arial;
+    overflow: hidden;
+
+}
+
+.buttonsBox{
+
+    height: 80%;
+
+}
+
+.content .buttons{
+
+    display: grid;
+    text-align: center;
+    grid-template-areas:
+    'bdiv bmult bsust badd'
+    'b9 b8 b7 bequal'
+    'b4 b5 b6 bequal'
+    'b1 b2 b3 bequal'
+    'b0 b0 bdot bequal';
+    /*'b9 b8 b7 bdiv'
+    'b4 b5 b6 bmult'
+    'b1 b2 b3 bsust'
+    'b0 bdot bequal badd'*/ ;
+    grid-gap: 5%;
+    
+}
+
+.content .buttons > div{
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 2em;
+   border: 1px solid #eee;
+   background-color: #333;
+   color: #eee;
+   border-radius: 5px;
+}
+
+.content .buttons div:hover{
+
+    background-color: #eee;
+    color: #111;
+    cursor: pointer;
+ }
+
+.b9 {grid-area:b9;}
+.b8 {grid-area:b8;}
+.b7 {grid-area:b7;}
+.b6 {grid-area:b6;}
+.b5 {grid-area:b5;}
+.b4 {grid-area:b4;}
+.b3 {grid-area:b3;}
+.b2 {grid-area:b2;}
+.b1 {grid-area:b1;}
+.b0 {grid-area:b0;}
+.bdot {grid-area:bdot;}
+.bdiv {grid-area:bdiv;}
+.bmult {grid-area:bmult;}
+.bsust {grid-area:bsust;}
+.bad {grid-area:badd;}
+.bequal {grid-area:bequal;}
+
+
+
+
+

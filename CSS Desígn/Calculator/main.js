@@ -1,0 +1,1 @@
+var button9 = document.getElementById('b9');
