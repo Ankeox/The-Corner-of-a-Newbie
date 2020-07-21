@@ -1,113 +1,93 @@
-@import url(https://allfont.net/allfont.css?fonts=digital-7-mono);
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
-*{
+*{  
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: poppins,arial;
+    font-family: poppins, sans-serif;
+    font-weight: 600;
 }
 
 body{
 
-    background-color: #222;
+    background: linear-gradient(to right, #FF8800, #FF5555);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    color: #12ff56;
+    min-height: 100vh;
 
 }
 
-.content{
+.container{
 
-    background-color: #222;
-    width: 270px;
-    height: 410px;
+    width: 175px;
+    height: auto;
+    background: rgba(255, 255, 255, 0.75);
     padding: 10px;
-    border: 5px solid #eee;
     border-radius: 10px;
-
+    box-shadow: 0 7.5px 5px rgba(0,0,0, 0.25);
 }
 
-.content .screen{
+.screen{
 
-    display: inline-block;
-    width: 100%;
-    height: 15%;
+    background-color: rgba(0,0,0, 0.75);
+    border-radius: 5px;
+    color: #eee;
     text-align: end;
-    vertical-align: middle;
-    background-color: #124212;
-    font-size: 3.1em;
-    margin-bottom: 20px;
-    padding-right: 7.5px;
-    padding-bottom: 7.5px;
-    font-family: digital-7 mono, arial;
-    overflow: hidden;
+    padding-right: 5px;
+    margin-bottom: 25px;
+    word-wrap: break-word;
 
 }
 
-.buttonsBox{
+.previousOperand{
 
-    height: 80%;
-
+    font-size: 1em;
 }
 
-.content .buttons{
+.currentOperand{
+
+    font-size: 1.5em;
+}
+
+.buttons-grid{
 
     display: grid;
-    text-align: center;
-    grid-template-areas:
-    'bdiv bmult bsust badd'
-    'b9 b8 b7 bequal'
-    'b4 b5 b6 bequal'
-    'b1 b2 b3 bequal'
-    'b0 b0 bdot bequal';
-    /*'b9 b8 b7 bdiv'
-    'b4 b5 b6 bmult'
-    'b1 b2 b3 bsust'
-    'b0 bdot bequal badd'*/ ;
-    grid-gap: 5%;
-    
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 35px) ;
+    grid-template-rows: repeat(5, 35px);
 }
 
-.content .buttons > div{
+.AC{ grid-area: 1 / span 2;}
+.n0{ grid-area: 5 / span 2 ;}
+.del{ grid-area: 1 / 3 ;}
+.division{ grid-area: 1 / 4 ;}
+.n9{ grid-area: 2 / 3 ;}
+.n8{ grid-area: 2 / 2 ;}
+.n7{ grid-area: 2 / 1 ;}
+.n6{ grid-area: 3 / 3 ;}
+.n5{ grid-area: 3 / 2 ;}
+.n4{ grid-area: 3 / 1 ;}
+.n3{ grid-area: 4 / 3 ;}
+.n2{ grid-area: 4 / 2 ;}
+.n1{ grid-area: 4 / 1 ;}
+.punto{ grid-area: 5 / 3 ;}
+.multiplication{ grid-area: 2 / 4 ;}
+.sustraction{ grid-area: 3 / 4 ;}
 
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   font-size: 2em;
-   border: 1px solid #eee;
-   background-color: #333;
-   color: #eee;
-   border-radius: 5px;
-}
+.buttons-grid > button{
 
-.content .buttons div:hover{
-
-    background-color: #eee;
-    color: #111;
+    outline: none;
     cursor: pointer;
- }
+    border: 0.5px solid rgba(255, 255, 255, 0.75);
+    border-radius: 5px;
+    background-color: rgba(255,150,0,0.65);
+    color: #eee;
+}
 
-.b9 {grid-area:b9;}
-.b8 {grid-area:b8;}
-.b7 {grid-area:b7;}
-.b6 {grid-area:b6;}
-.b5 {grid-area:b5;}
-.b4 {grid-area:b4;}
-.b3 {grid-area:b3;}
-.b2 {grid-area:b2;}
-.b1 {grid-area:b1;}
-.b0 {grid-area:b0;}
-.bdot {grid-area:bdot;}
-.bdiv {grid-area:bdiv;}
-.bmult {grid-area:bmult;}
-.bsust {grid-area:bsust;}
-.bad {grid-area:badd;}
-.bequal {grid-area:bequal;}
+.buttons-grid > button:hover{
 
-
-
-
-
+    background-color: rgba(255, 255, 255, 0.75);
+    color: #111;
+}

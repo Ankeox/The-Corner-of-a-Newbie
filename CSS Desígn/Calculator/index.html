@@ -7,31 +7,34 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <div class="content">
-
-            <div class="screen">0</div>
-
-            <div class="buttonsBox">
-                <div class="buttons">
-                    <div class='b9'id="b9">9</div>
-                    <div class='b8'id="b8">8</div>
-                    <div class='b7'id="b7">7</div>
-                    <div class='b6'id="b6">6</div>
-                    <div class='b5'id="b5">5</div>
-                    <div class='b4'id="b4">4</div>
-                    <div class='b3'id="b3">3</div>
-                    <div class='b2'id="b2">2</div>
-                    <div class='b1'id="b1">1</div>
-                    <div class='b0'id="b0">0</div>
-                    <div class='bdiv'id="bdiv">/</div>
-                    <div class='bmult'id="bmult">*</div>
-                    <div class='bsust'id="bsust">-</div>
-                    <div class='badd'id="badd">+</div>
-                    <div class='bequal'id="bequal">=</div>
-                    <div class='bdot'id="bdot">.</div>
-                </div>
+        <div class="container">
+            <div class="screen">
+                <div data-previous-operation class="previousOperand">0</div>
+                <div data-current-operation class="currentOperand">0</div>
             </div>
-        </div>
+
+            <div class="buttons-grid">
+                <button data-all-clear class="AC">AC</button>
+                <button data-delete class="del">DEL</button>
+                <button data-operation class="multiplication">x</button>
+                <button data-operation class="addition">+</button>
+                <button data-operation class="sustraction">-</button>
+                <button data-operation class="division">÷</button>
+                <button data-equal class="equal">=</button>
+                <button data-number class="n9">9</button>
+                <button data-number class="n8">8</button>
+                <button data-number class="n7">7</button>
+                <button data-number class="n6">6</button>
+                <button data-number class="n5">5</button>
+                <button data-number class="n4">4</button>
+                <button data-number class="n3">3</button>
+                <button data-number class="n2">2</button>
+                <button data-number class="n1">1</button>
+                <button data-number class="n0">0</button>
+                <button data-number class="punto">.</button>
+            </div>
+            
+        </div>  
         <script src="main.js" type="text/JavaScript"></script>
     </body>
 </html>
