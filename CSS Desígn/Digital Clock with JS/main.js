@@ -27,12 +27,8 @@
         
             let months = ['January','Febuary','March','April','May','June','July','August','September','October','November','December'];
         
-        if(hour>12){
-
-            hour=hour-12;
-            ampm = 'PM';
-        }
-
+        if(hour>12){hour=hour-12;}
+        if(hour>=12){ampm='PM';}
         if(hour === 12){ hour = 12;}
         if(hour < 10){ hour= '0' + hour;}
         if(minute < 10){ minute= '0' + minute;}
@@ -40,7 +36,7 @@
 
      
 
-            sMonth.textContent = months[month];
+        sMonth.textContent = months[month];
         sDay.textContent = day;
         sYear.textContent = year;
         sHour.textContent = hour;
