@@ -1,1 +1,38 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+
+body{
+    background-image: url(https://cdn.elearningindustry.com/wp-content/uploads/2018/11/20-tools-i-used-in-2018-for-designing-and-developing-1024x574.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
+
+}
+
+.overcolor{
+    position: absolute;
+    background-color: blueviolet;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+#title{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+
+}
+
+h1{
+    color: white;
+    font-size: 48px;
+}
+
